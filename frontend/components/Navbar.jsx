@@ -61,8 +61,8 @@ const Navbar = () => {
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <Image
-            width="28px"
-            height="28px"
+            width={28}
+            height={28}
             src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
             alt='menu'
             className='object-contain'

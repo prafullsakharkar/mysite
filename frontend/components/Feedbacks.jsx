@@ -36,8 +36,8 @@ const FeedbackCard = ({
         </div>
 
         <Image
-          width="40px"
-          height="40px"
+          width={40}
+          height={40}
           src={image}
           alt={`feedback_by-${name}`}
           className='rounded-full object-cover'
