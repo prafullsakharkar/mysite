@@ -15,7 +15,7 @@ export const metadata = {
   description: "My Profile Page",
 };
 
-const RootLayout = ({ children }) => (
+const RootLayout = () => (
   <html lang='en'>
     <body>
       <div className='relative z-0 bg-primary'>
