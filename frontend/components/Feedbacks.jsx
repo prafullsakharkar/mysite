@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import SectionWrapper from "@hoc/SectionWrapper";
 import { fadeIn, textVariant } from "@utils/motion";
 import { testimonials } from "@constants";
+import Image from "next/image";
 
 const FeedbackCard = ({
   index,
@@ -34,10 +35,12 @@ const FeedbackCard = ({
           </p>
         </div>
 
-        <img
+        <Image
+          width="40px"
+          height="40px"
           src={image}
           alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
+          className='rounded-full object-cover'
         />
       </div>
     </div>

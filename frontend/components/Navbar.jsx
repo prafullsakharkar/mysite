@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 import { navLinks } from "@constants";
+import Image from "next/image";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -59,10 +60,12 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
+          <Image
+            width="28px"
+            height="28px"
             src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            className='object-contain'
             onClick={() => setToggle(!toggle)}
           />
 
